@@ -1,6 +1,8 @@
 html {
     font-size: 10px;
     color: #4e4e4d;
+    font-family: 'Roboto Serif', serif;
+    font-weight: 300; 
 }
 
 main {
@@ -46,6 +48,7 @@ section > div {
 }
 
 input[type="number"] {
+    font-family: inherit;
     background: #f4f4f5;
     font-size: 1.6rem;
     border: 1px solid lightgray;
@@ -62,4 +65,23 @@ input[type="number"] {
 .total {
     font-size: 2rem;
     font-weight: bolder;
+}
+
+.range {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background: #eee;
+    margin-top: 1.2rem;
+    border-radius: 0.3rem;
+    outline: #5bceae;
+}
+
+.range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    background: #3dc0c0;
+    cursor: pointer;
 }
